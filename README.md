@@ -1,54 +1,68 @@
-<header>
+# Sistema de Gestión de Tareas
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+## 📋 Descripción
 
-# GitHub Pages
+Este proyecto es una aplicación de línea de comandos (CLI) desarrollada en Python que permite a los usuariosgestionar sus tareas diarias. 
+Las funcionalidades incluyen crear, editar, eliminar, listar y filtrar tareas por categoría o estado. Además, 
+el sistema guarda las tareas automáticamente utilizando persistencia en archivos JSON y asegura que solo exista una instancia del gestor de 
+tareas mediante el patrón de diseño Singleton.
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+## ✅ Requisitos previos
 
-</header>
+- Python 3.7 o superior
+- Sistema operativo: Windows, Linux o macOS
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+##  Instrucciones de instalación
 
-## Step 1: Enable GitHub Pages
+1. **Clonar el repositorio:**
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+```bash
+git clone https://github.com/tu-usuario/sistema-gestion-tareas.git
+cd sistema-gestion-tareas
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+Opcional) Crear un entorno virtual:
+python -m venv venv
+source venv/bin/activate  # En Linux/Mac
+venv\Scripts\activate     # En Windows
 
-### :keyboard: Activity: Enable GitHub Pages
+Instalar dependencias (si se usan):
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
+pip install -r requirements.txt
+Nota: Este proyecto no requiere paquetes externos, solo la biblioteca estándar de Python.
 
-<footer>
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+Ejecutar el programa:
 
----
+python main.py
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+Guía de uso
+Al ejecutar el sistema, se mostrará un menú interactivo con las siguientes opciones:
+1. Agregar tarea
+2. Editar tarea
+3. Eliminar tarea
+4. Listar tareas
+5. Filtrar tareas
+6. Salir
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+Ejemplo de uso:
+Agregar una tarea:
 
-</footer>
+Ingrese el título, descripción y categoría.
+
+Filtrar tareas:
+
+Puede filtrar por categoría ("Trabajo", "Personal", etc.) o estado ("Pendiente" o "Completada").
+
+Salir:
+
+Guarda automáticamente las tareas antes de salir del sistema.
+
+Autores
+[ismael eduardo sanatana avila]
+
+Plan de evolución (futuro)
+✅ Implementar una API REST para integración con aplicaciones móviles.
+
+✅ Añadir recordatorios automáticos usando schedule o time.
+
+✅ Migrar la interfaz a una aplicación gráfica con Tkinter, Kivy o PyQt.

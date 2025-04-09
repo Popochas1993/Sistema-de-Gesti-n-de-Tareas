@@ -1,0 +1,30 @@
+[
+    {
+        "task_id": 2,
+        "title": "RATO JOTO",
+        "description": "completado",
+        "category": "pro",
+        "status": "Pendiente"
+    },
+    {
+        "task_id": 3,
+        "title": "prostituta",
+        "description": "completado",
+        "category": "pro",
+        "status": "Pendiente"
+    },
+    {
+        "task_id": 5,
+        "title": "RECOJER CUARTO",
+        "description": "ACOMODAR LA ROPA",
+        "category": "URGENTE ",
+        "status": "Pendiente"
+    },
+    {
+        "task_id": 6,
+        "title": "DIEGO",
+        "description": " NO REALIZA LAS ACTIVIDADES",
+        "category": "REPROBADO",
+        "status": "Pendiente"
+    }
+]
